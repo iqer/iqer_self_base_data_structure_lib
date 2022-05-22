@@ -1,14 +1,16 @@
 class OrderList:
-    def __init__(self, capacity):
+    def \
+            __init__(self, capacity):
         self.size = 0
         self.capacity = capacity
-        self.items = []
+        self.items = [None] * capacity
 
     def create_list(self):
         if self.size == self.capacity:
             return
         for i in range(self.capacity):
             info = input('请输入信息:')
+            self.size += 1
             self.items[i] = info
 
         return True
@@ -24,7 +26,7 @@ class OrderList:
                 return i
 
     def insert_item(self, index, item):
-        if index < 0 or index >= self.size:
+        if index < 0 or index >= self.capacity:
             return
         i = self.size - 1
         while i > index:
