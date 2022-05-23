@@ -8,9 +8,12 @@ class SLList:
             self.insert_head(num)
 
     def create_list_tail(self):
-        nums = [1, 2, 3, 4, 5, 6]
-        for num in nums:
-            self.insert_tail(num)
+        num = int(input('请输入数量n:'))
+        for i in range(num):
+            data = int(input('请输入数字:'))
+            # nums = [1, 2, 3, 4, 5]
+            # for num in nums:
+            self.insert_tail(data)
 
     def insert_head(self, data):
         insert_node = LNode(data)

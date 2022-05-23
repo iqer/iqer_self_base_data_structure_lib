@@ -1,6 +1,5 @@
 class OrderList:
-    def \
-            __init__(self, capacity):
+    def __init__(self, capacity):
         self.size = 0
         self.capacity = capacity
         self.items = [None] * capacity
